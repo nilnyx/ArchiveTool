@@ -2,10 +2,12 @@
 
 #include <filesystem>
 #include <unordered_map>
+#include <string>
+#include <vector>
 
 struct FileInfo {
 	std::wstring name;
-	size_t size;
+	uintmax_t size;
 };
 
 struct ScanResult {
