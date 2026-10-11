@@ -4,6 +4,7 @@
 #include "utils/FormatSize.h"
 #include "utils/Scan.h"
 #include "utils/Find.h"
+#include "utils/Info.h"
 
 
 int main(int args, char* argv[]) {
@@ -13,7 +14,7 @@ int main(int args, char* argv[]) {
 	}
 
 	if (std::string(argv[1]) == "scan") {
-		ScanResult result = scan(argv[2]);
+		const ScanResult result = scan(argv[2]);
 
 		const auto size = formatSize(result.bytes);
 
@@ -27,12 +28,22 @@ int main(int args, char* argv[]) {
 		return EXIT_SUCCESS;
 	}
 	if (std::string(argv[1]) == "find") {
-		auto result = find(argv[2], argv[3]);
+		const auto result = find(argv[2], argv[3]);
 
 		for (const auto &file : result) {
 			std::wcout << "Found: " << file.path << std::endl;
 		}
 		std::cout << "\n\nMatches: " << result.size() << std::endl;
+	}
+	if (std::string(argv[1]) == "info") {
+		const auto result = info(argv[2]);
+
+		const auto size = formatSize(result.bytes);
+
+		std::wcout << "File: " << result.name << std::endl;
+		std::wcout << "Path: " << result.path << std::endl;
+		std::cout << "Extension: " << result.extension << std::endl;
+		std::cout << "Size: " << size.first << ' ' << size.second << std::endl;
 	}
 
 	return EXIT_SUCCESS;
