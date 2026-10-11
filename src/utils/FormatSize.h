@@ -1,5 +1,5 @@
 #pragma once
 #include <string>
-#include <utility>
+#include <cstdint>
 
 std::pair<float, std::string> formatSize(uintmax_t bytes);

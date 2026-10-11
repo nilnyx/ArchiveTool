@@ -1,5 +1,7 @@
 #include "FormatSize.h"
-
+#include <cmath>
+#include <string>
+#include <cstdint>
 
 std::pair<float, std::string> formatSize(uintmax_t bytes) {
 	const float kb = round(bytes / 10.24f) / 100;

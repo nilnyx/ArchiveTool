@@ -8,7 +8,7 @@
 int main(int args, char* argv[]) {
 	if (args < 3) {
 		std::cout << "Usage: /.ArchiveTool.exe <command> <flags>";
-		return{};
+		return EXIT_FAILURE;
 	}
 
 	if (std::string(argv[1]) == "scan") {
