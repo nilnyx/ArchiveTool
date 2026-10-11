@@ -10,16 +10,23 @@ ScanResult scan(const std::filesystem::path &path) {
 	ScanResult result{};
 	try {
 		for (const auto& entry : fs::recursive_directory_iterator(path)) {
-			if (entry.is_regular_file()) {
-				const uintmax_t size = entry.file_size();
+			if (!entry.is_regular_file()) continue;
 
-				result.bytes += size;
+			const uintmax_t size = entry.file_size();
+			result.bytes += size;
 
-				result.files.push_back({ entry.path().filename().wstring(), size });
+			fs::path entryPath = entry.path();
 
-				if (!entry.path().extension().empty())
-					result.extensions[entry.path().extension().string()]++;
-			}
+			result.files.push_back({
+				       entryPath,
+				    entryPath.filename().wstring(),
+				entryPath.extension().string(),
+				   size
+			});
+
+			if (!entry.path().extension().empty())
+				result.extensions[entry.path().extension().string()]++;
+			
 		}
 		return result;
 	} catch (const fs::filesystem_error& e) {

@@ -4,7 +4,7 @@
     <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>scan "C:\Users\Santey\Downloads\AyuGram Desktop\music"</LocalDebuggerCommandArguments>
-    <LocalDebuggerCommandArgumentsHistory>scan "C:\Users\Santey\Downloads\AyuGram Desktop\musics"|scan "C:\Users\Santey\Downloads\AyuGram Desktop"|scan "C:\Users\Santey\Downloads\AyuGram Desktop\musicc"|scan "C:\Users\Santey\Downloads\AyuGram Desktop\music"|</LocalDebuggerCommandArgumentsHistory>
+    <LocalDebuggerCommandArguments>find "C:\Users\Santey\source\repos" "main.cpp"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArgumentsHistory>scan "C:\Users\Santey\Downloads\AyuGram Desktop"|find "C:\Users\Santey\Downloads\AyuGram Desktop"|find "C:\Users\Santey\Downloads\AyuGram Desktop\music" "Fused Zamasu &amp; Corrupted Zamasu.m4a"|find "C:\Users\Santey\Downloads\AyuGram Desktop" "Fused Zamasu &amp; Corrupted Zamasu.m4a"|find "C:\Users\Santey\source\repos" "main.cpp"|</LocalDebuggerCommandArgumentsHistory>
   </PropertyGroup>
 </Project>

@@ -159,11 +159,13 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\utils\Find.cpp" />
     <ClCompile Include="src\utils\FormatSize.cpp" />
     <ClCompile Include="src\utils\Scan.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\utils\Find.h" />
     <ClInclude Include="src\utils\FormatSize.h" />
     <ClInclude Include="src\utils\Scan.h" />
   </ItemGroup>

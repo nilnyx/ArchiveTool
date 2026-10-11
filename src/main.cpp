@@ -3,6 +3,7 @@
 
 #include "utils/FormatSize.h"
 #include "utils/Scan.h"
+#include "utils/Find.h"
 
 
 int main(int args, char* argv[]) {
@@ -23,6 +24,15 @@ int main(int args, char* argv[]) {
 
 		std::cout << "Regular files: " << result.files.size() << std::endl;
 		std::cout << "Size: " << size.first << ' ' << size.second << std::endl;
+		return EXIT_SUCCESS;
+	}
+	if (std::string(argv[1]) == "find") {
+		auto result = find(argv[2], argv[3]);
+
+		for (const auto &file : result) {
+			std::wcout << "Found: " << file.path << std::endl;
+		}
+		std::cout << "\n\nMatches: " << result.size() << std::endl;
 	}
 
 	return EXIT_SUCCESS;

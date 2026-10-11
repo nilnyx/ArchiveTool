@@ -6,8 +6,10 @@
 #include <vector>
 
 struct FileInfo {
+	std::filesystem::path path;
 	std::wstring name;
-	uintmax_t size;
+	std::string extension;
+	uintmax_t bytes;
 };
 
 struct ScanResult {
