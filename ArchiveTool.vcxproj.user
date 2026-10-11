@@ -4,7 +4,7 @@
     <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>scan "C:\Users\Santey\Downloads\AyuGram Desktop\music"</LocalDebuggerCommandArguments>
-    <LocalDebuggerCommandArgumentsHistory>scan "C:\Users\Santey\Downloads\AyuGram Desktop\musics"|scan "C:\Users\Santey\Downloads\AyuGram Desktop\musicc"|scan "C:\Users\Santey\Downloads\AyuGram Desktop"|scan "C:\Users\Santey\Downloads\AyuGram Desktop\music"|</LocalDebuggerCommandArgumentsHistory>
+    <LocalDebuggerCommandArguments>scan "C:\Users\Santey\Downloads\AyuGram Desktop\musicc"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArgumentsHistory>scan "C:\Users\Santey\Downloads\AyuGram Desktop\musics"|scan "C:\Users\Santey\Downloads\AyuGram Desktop\music"|scan "C:\Users\Santey\Downloads\AyuGram Desktop"|scan "C:\Users\Santey\Downloads\AyuGram Desktop\musicc"|</LocalDebuggerCommandArgumentsHistory>
   </PropertyGroup>
 </Project>
