@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ArchiveTool.vcxproj" Id="7d7508d9-bec6-428d-8ce1-68b8d81c5c95" />
+</Solution>
